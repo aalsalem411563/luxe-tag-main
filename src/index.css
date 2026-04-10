@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 20 10% 8%;
+    --foreground: 40 20% 90%;
+
+    --card: 20 8% 12%;
+    --card-foreground: 40 20% 90%;
+
+    --popover: 20 8% 12%;
+    --popover-foreground: 40 20% 90%;
+
+    --primary: 43 72% 55%;
+    --primary-foreground: 20 10% 8%;
+
+    --secondary: 20 8% 16%;
+    --secondary-foreground: 40 20% 85%;
+
+    --muted: 20 6% 18%;
+    --muted-foreground: 40 10% 55%;
+
+    --accent: 43 72% 55%;
+    --accent-foreground: 20 10% 8%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 40 15% 22%;
+    --input: 40 15% 22%;
+    --ring: 43 72% 55%;
+
+    --radius: 0.5rem;
+
+    --gold: 43 72% 55%;
+    --gold-light: 43 80% 70%;
+    --gold-dark: 43 60% 40%;
+
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Inter', system-ui, sans-serif;
+
+    --sidebar-background: 20 10% 6%;
+    --sidebar-foreground: 40 20% 90%;
+    --sidebar-primary: 43 72% 55%;
+    --sidebar-primary-foreground: 20 10% 8%;
+    --sidebar-accent: 20 8% 14%;
+    --sidebar-accent-foreground: 40 20% 90%;
+    --sidebar-border: 40 15% 18%;
+    --sidebar-ring: 43 72% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
